@@ -1,0 +1,7 @@
+services:
+  servicio-postal:
+  image: servicio-postal
+  restart: always
+  container_name: servicio-postal
+  ports:
+    - '3800:3800'

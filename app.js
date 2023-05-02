@@ -22,7 +22,7 @@ app.use('/api/v1/postal_code', service);
 
 server.listen(port, async () => {
 	try {
-		await sequelize.sync({ force: false });
+		await sequelize.sync({ force: true });
 		await sequelize.authenticate();
 		console.log('Conexion exitosa a la base de datos');
 
