@@ -13,5 +13,12 @@ pipeline {
       }
     }
 
+    stage('deploy') {
+      steps {
+        sh 'docker build -t \'servicio-postal\' .'
+        sh 'docker-compose up -d'
+      }
+    }
+
   }
 }
