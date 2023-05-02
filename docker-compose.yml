@@ -5,3 +5,7 @@ services:
   container_name: servicio-postal
   ports:
     - '3800:3800'
+
+networks:
+  mynet:
+    driver: bridge
