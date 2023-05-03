@@ -15,6 +15,7 @@ const server = http.createServer(app);
 const port = process.env.PORT || 3800;
 
 import './models/postal_codes.js';
+console.log('first');
 import './models/user.js';
 import service from './routes/service.routes.js';
 
